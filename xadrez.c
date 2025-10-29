@@ -37,7 +37,28 @@ int main() {
         printf("Esquerda\n");
         j++;
     } while (j <= casasRainha);
+    
+    // Movimentação do CAVALO
+    // O cavalo se move em "L": 2 casas para baixo + 1 casa para a esquerda.
+    int casasBaixo = 2;   // número de casas para baixo
+    int casasEsquerda = 1; // número de casas para a esquerda
+    int contador = 1;
+
+    printf("Movimento do CAVALO:\n");
+
+    // Loop externo (for): movimento para baixo
+    for (int k = 1; k <= casasBaixo; k++) {
+        printf("Baixo\n");
+    }
+
+    // Loop interno (while): movimento para a esquerda
+    while (contador <= casasEsquerda) {
+        printf("Esquerda\n");
+        contador++;
+    }
+
     printf("\nFim da simulação de movimentos.\n");
+
 
     return 0;
 }
